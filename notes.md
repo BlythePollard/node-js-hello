@@ -20,4 +20,19 @@ Http module
     -req argument in createServer() represents request from client as object 
             http.incomingMessageObject      
         -req has property called url (req.url) which holds part of url that comes after domain name: can use this to read query strings and customize
-      
+
+Node.js as a File Server
+    -to include file system module: var fs = require('fs)
+    -common uses: read, create, update, delete, rename files
+    -Read files: fs.readFile() used to read files on computer
+    -Create files: fs.appendFile(), fs.open(), fs.writeFile()
+    -Update files: fs.appendFile(), fs.writeFile()
+    -Delete files: fs.unlink()
+    -Rename: fs.rename()
+    -Can also use to upload
+
+URL Module
+    -Built in- splits up web address into readable partws
+    -To include: var url = require('url')
+    -Parse an address with url.parse(), then can return host, pathname, search, query
+    
